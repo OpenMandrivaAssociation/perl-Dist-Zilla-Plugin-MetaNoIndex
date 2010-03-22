@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla-Plugin-MetaNoIndex
-%define upstream_version 0.0200
+%define upstream_version 0.0300
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
