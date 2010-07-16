@@ -11,7 +11,11 @@ Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Dist/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires: perl(Data::PowerSet)
 BuildRequires: perl(Dist::Zilla)
+BuildRequires: perl(Modern::Perl)
+BuildRequires: perl(Test::Most)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -27,7 +31,6 @@ file in your distribution.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
 %make
 
 %check
@@ -45,5 +48,3 @@ rm -rf %buildroot
 %doc Changes META.yml LICENSE README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
