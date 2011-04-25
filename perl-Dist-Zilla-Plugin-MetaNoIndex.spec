@@ -15,6 +15,9 @@ BuildRequires: perl(Data::PowerSet)
 BuildRequires: perl(Dist::Zilla)
 BuildRequires: perl(Modern::Perl)
 BuildRequires: perl(Test::Most)
+BuildRequires: perl(Test::Warn)
+BuildRequires: perl(Test::Exception)
+BuildRequires: perl(Test::Differences)
 BuildRequires: perl(Readonly)
 
 BuildArch: noarch
