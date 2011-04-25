@@ -15,6 +15,7 @@ BuildRequires: perl(Data::PowerSet)
 BuildRequires: perl(Dist::Zilla)
 BuildRequires: perl(Modern::Perl)
 BuildRequires: perl(Test::Most)
+BuildRequires: perl(Readonly)
 
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
